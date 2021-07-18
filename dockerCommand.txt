@@ -1,8 +1,8 @@
 docker run \
 -d \
--p 25565:25565 \
---name mc \
--e EURA=TRUE \
+-p 25566:25565 \
+--name mc4 \
+-e EULA=TRUE \
 --restart=always \
--v /mnt/c/game/mincraft/minecraft-server-docker/_data:/data \
+-v /mnt/c/game/mincraft/minecraft-server-docker-4/_data:/data \
 itzg/minecraft-server
