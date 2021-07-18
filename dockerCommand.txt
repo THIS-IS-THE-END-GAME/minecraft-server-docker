@@ -1,0 +1,8 @@
+docker run \
+-d \
+-p 25565:25565 \
+--name mc \
+-e EURA=TRUE \
+--restart=always \
+-v /mnt/c/game/mincraft/minecraft-server-docker/_data:/data \
+itzg/minecraft-server
